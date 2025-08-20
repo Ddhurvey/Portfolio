@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 60.5%;
+}
+
+body {
+    background-color:black;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+
+/* ===== Header ===== */
+.header {
+    background-color: rgba(0, 0, 0, 0.47);
+    height: 20dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    position: fixed;
+}
+
+header section img {
+    height: 15rem;
+    width: auto;
+    padding: 0.2rem;
+    aspect-ratio: 1/1;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+section nav li {
+    list-style: none;
+}
+
+section nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+section nav li i {
+    color: #00ACEE;
+    margin-right: .5rem;
+}
+
+.hire {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    border: 1px solid #FFFFFF;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+    transition-property: box-shadow,scale;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+.hire:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.61);
+    scale: 1.1;
+}
+
+/* Hover effect */
+section nav li a {
+    transition: all 0.3s ease;
+}
+section nav li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Main ===== */
+main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+        "text image"
+        "subheading subtext"
+        "upload upload";  
+    padding: 0 10rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 5rem;
+}
+
+/* Map grid areas */
+.container-main-page { 
+    grid-area: text; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.container-main-page-img {
+    grid-area: image;
+}
+.second-row-of-first-column { 
+    grid-area: subheading; 
+    font-size: 3rem;
+}
+.second-row-second-column { 
+    grid-area: subtext; 
+    font-size: 1.3rem;
+    text-align: justify;
+    justify-self:flex-end;
+    padding-right: 5rem;
+}
+.upload-section { 
+    grid-area: upload; 
+
+}
+
+/* Content styles */
+main button {
+    background-color: #5454D4;
+    padding: 1.25rem 2rem;
+    outline:0;
+    border:0;
+    /* border: .5px solid #1A1A1C; */
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem; 
+    /* box-shadow: 0px 0px 20px #5454d48e; */
+    transition-property:box-shadow, scale;
+    transition-timing-function: ease;
+    transition-duration:.7s;
+}
+
+main button:hover {
+    box-shadow: 0px 0px 20px #5454d48e;
+    scale: 1.1;
+}
+main div h1 {
+    font-size: 7rem;
+    line-height: 1;
+}
+main div p{
+    font-size: 1.5rem;
+    /* text-align: justify; */
+    line-height: 1.4;
+    font-weight: 100;
+    max-width: 40rem;
+
+}
+main div img {
+    height: auto;
+    width: 100%;
+}
+
+/* Upload Section */
+.upload-section img{
+    background-size: cover;
+    aspect-ratio: 16/9;
+    width:100%;
+}
