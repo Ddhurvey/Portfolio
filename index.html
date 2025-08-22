@@ -9,9 +9,14 @@
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-96x96.png"
+            sizes="96x96"
+        >
         <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
         <link rel="shortcut icon" href="favicon/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -26,34 +31,63 @@
     </head>
     <body>
         <!-- ===== Header ===== -->
-        <header class="header">
+        <header class="header" id="header-home">
             <section class="logo">
                 <img src="logo-removebg-preview.png" alt="Devendra Logo">
             </section>
             <section class="navigation">
                 <nav class="nav-items">
-                    <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
-                    <li><a href="#"><i class="fa-solid fa-brain"></i> Skills</a></li>
-                    <li><a href="#"><i class="fa-solid fa-handshake"></i> Services</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fa-solid fa-circle-info"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-brain"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-handshake"></i>
+                            Services
+                        </a>
+                    </li>
                 </nav>
             </section>
             <section class="hire-button">
                 <a href="#" class="hire">Hire Me</a>
             </section>
         </header>
-        <br><br><br><br><br>
+        <!-- <br><br><br><br><br> -->
         <!-- ===== Main ===== -->
         <main class="main-container">
             <div class="container-main-page">
-                <h1>
-                    Welcome To <br>
-                    My Personal <br>
+                <h1 class="capital">
+                    Welcome To
+                    <br>
+                    My
+                    <!-- <br> -->
                     Portfolio
                 </h1>
                 <p>
-                    I’m <b>Devendra Dhurvey</b>, a passionate web developer and designer. 
+                    I’m
+                    <b>Devendra Dhurvey</b>
+                    , a passionate web developer and designer. 
                     I create clean, modern, and responsive websites with a focus on user-friendly design 
                     and smooth functionality. Explore my work and let’s build something amazing together.
                 </p>
@@ -61,17 +95,54 @@
                     View My Work
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </button>
-                
             </div>
-
             <div class="container-main-page-img">
-                <img src="Group 162532 (1).png" alt="Portfolio Preview">
+                <img src="abbu2.jpg" alt="Portfolio Preview">
             </div>
-        
+            <!-- ===== About ===== -->
+            <div class="about-container">
+                <h2 class="about-header" id="about">About Me</h2>
+                <div class="about-items">
+                    <div class="about-container-first-column">
+                        <p class="about-para">
+                            I’m a passionate and curious learner from Madhya Pradesh, with a strong interest in technology, coding, and innovation.
+                        </p>
+                        <br>
+                        <p class="about-para">
+                            My journey into tech started in 2019 when I received the
+                            <b>Best Robot Design Award</b>
+                            at Fluxus, the Tech Fest of IIT Indore, for a “Robot Soccer” project. Since then, I’ve been driven to build meaningful and creative solutions using technology.
+                        </p>
+                        <br>
+                        <p class="about-para">
+                            I studied at
+                            <b>Riverside Natural School (Mrida)</b>
+                            , where I built a foundation in robotics, problem-solving, and mathematics. Currently, I’m learning
+                            <b>Python, HTML, and CSS</b>
+                            at Navgurukul, Dharamshala, a one-year residential program focused on empowering young people through coding education.
+                        </p>
+                        <br>
+                        <ul class="about-para about-list">
+                            <li>🌱 I believe in continuous learning</li>
+                            <li>⚙️ I enjoy solving real-world problems through code</li>
+                            <li>🚀 I aim to use technology for social good and impact</li>
+                        </ul>
+                        <br>
+                        <p class="about-para">
+                            I'm open to opportunities in
+                            <b>web development, robotics</b>
+                            , or projects where I can grow while contributing meaningfully.
+                        </p>
+                        <br>
+                    </div>
+                    <div class="my-image-about-section">
+                        <img src="Devendra-practicing-at-the-Tech-Lab-RNS.jpg" alt="Devendra-practicing-at-the-Tech-Lab-RNS">
+                    </div>
+                </div>
+            </div>
             <div class="second-row-of-first-column">
                 <h2>Why Choose My Work?</h2>
             </div>
-
             <div class="second-row-second-column">
                 <p>
                     I combine creativity with code to deliver professional web solutions. 
@@ -79,13 +150,14 @@
                     I ensure quality and attention to detail in every project.
                 </p>
             </div>
-
             <!-- Portfolio Image Section -->
             <div class="upload-section">
-                <img src="image-dev.webp" alt="Devendra Portfolio Image">
+                <div class="image-section-projects">
+                    <img class="pet-image" src="Screenshot 2025-08-20 233552.png" alt="Devendra Portfolio Image">
+                    <img class="portfolio-image" src="Screenshot 2025-08-20 234222.png" alt="Devendra Portfolio projects">
+                </div>
             </div>
         </main>
-
         <!-- ===== Footer ===== -->
         <footer>
             <p>© 2025 Devendra Dhurvey | All Rights Reserved</p>
