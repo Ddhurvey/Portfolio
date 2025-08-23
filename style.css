@@ -123,7 +123,7 @@ section nav li a:hover::after {
 }
 
 /* ===== Main ===== */
-main {
+.main-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto auto auto auto auto auto;
@@ -186,7 +186,7 @@ main {
 }
 
 /* Content styles */
-main button {
+.main-container button {
     background-color:transparent;
     padding: 1.25rem 2rem;
     outline:0;
@@ -329,6 +329,61 @@ main div img {
     scale:1.025;
     /* z-index:3; */
 }
+/* Skills section */
+.skills-container{
+    font-size: 3.35rem;
+    place-self: start;
+    margin: 0 auto;
+    max-width: 130rem;
+    color:white;
+    background-color:black;
+    
+}
+.skills-container h2{
+    background-color: #5454d4;
+    width: 130rem;
+    width:fit-content;
+    place-items: flex-start;
+}
+.skills-container section p{
+    display: flex;
+    /* border: 2px solid white; */
+    height: fit-content;
+    margin: 0 9rem;
+    white-space: nowrap;
+    flex-wrap:wrap;
+}
+.skills-items{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    background-color:black;
+    font-family:Montserrat, sans-serif;
+    color: white;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    max-width:130rem;
+    height:35rem;
+    margin:0 auto;
+    justify-content: space-between;
+}
+.skills-list{
+    color: #FFFFFF;
+    font-size: 3rem;
+    word-spacing: 1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 2rem;
+    img {
+        width:5rem;
+    }
+
+    .html {
+        width:6rem;
+    }
+}
+
 
 @media(max-width:1245px) {
     html {
