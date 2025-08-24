@@ -128,6 +128,9 @@ section nav li a:hover::after {
 }
 
 /* ===== Main ===== */
+/* main{
+    display: flex;
+} */
 .main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -434,6 +437,9 @@ main div img {
     
 }
 
+.service-items{
+    background-color: #e9e3df5b;
+}
 .service-container section p {
     color: #FFFFFF;
 }
@@ -441,26 +447,46 @@ main div img {
 .service-items {
     display: flex;
     grid-template-columns: repeat(3, 1fr);
-    background-color: black;
     font-family: Montserrat, sans-serif;
     color: white;
     max-width: 130rem;
     height: 35rem;
     margin: 0 auto;
     justify-content: space-between;
+    border-radius: 45px;
 }
 
 .service-list{
     color: #FFFFFF;
     font-size: 3rem;
+    background-color: rgba(8, 212, 19, 0.521);
     word-spacing: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    border: 2px solid #E9E3DF;
+    border-radius: 45px;
+    /* overflow-x: hidden; */
+    /* flex-wrap: nowrap; */
 }
 
+.service-list img{
+    filter: invert(1);
+    width: 5rem;
+
+}
+.service-list h4{
+    text-align: center;
+    max-width: 25rem;
+    font-size: 2.5rem;
+}
+.service-list p{
+    text-align: center;
+    max-width: 30rem;
+    font-size: 1.7rem;
+}
 
 
 
