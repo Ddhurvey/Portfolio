@@ -453,13 +453,14 @@ main div img {
     height: 35rem;
     margin: 0 auto;
     justify-content: space-between;
-    border-radius: 45px;
+    /* border-radius: 45px; */
+    padding: 4rem;
 }
 
 .service-list{
     color: #FFFFFF;
     font-size: 3rem;
-    background-color: rgba(8, 212, 19, 0.521);
+    background-color: #00abef54;
     word-spacing: 1rem;
     display: flex;
     flex-direction: column;
@@ -467,9 +468,19 @@ main div img {
     align-items: center;
     gap: 2rem;
     border: 2px solid #E9E3DF;
-    border-radius: 45px;
+    border-radius:2rem;
+    padding: 1rem;
     /* overflow-x: hidden; */
     /* flex-wrap: nowrap; */
+    text-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
+    transition: scale, 0.5s ease;
+}
+.service-list:hover{
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px gray;
+    
+    scale: 1.03;
 }
 
 .service-list img{
@@ -485,7 +496,9 @@ main div img {
 .service-list p{
     text-align: center;
     max-width: 30rem;
+    color: #000000;
     font-size: 1.7rem;
+    font-weight: 400;
 }
 
 
